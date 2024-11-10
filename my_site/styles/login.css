@@ -1,0 +1,60 @@
+@font-face {
+    font-family: 'Gilroy';
+    src: url("../fonts/Gilroy-Semibold.ttf");
+}
+
+@font-face {
+    font-family: 'Merriweather';
+    src: url("../fonts/Merriweather-Black.ttf");
+}
+
+body {
+    background-color: #191411;
+    font-family: 'Gilroy', sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Высота вьюпорта для центрирования по вертикали */
+    margin: 0; /* Убираем отступы */
+}
+
+h2 {
+    text-align: center;
+    padding-bottom: 20px; /* Можно убрать отступ сверху для заголовка */
+}
+
+form {
+    display: flex;
+    flex-direction: column; /* Элементы располагаются по вертикали */
+    align-items: center; /* Центрируем элементы по горизонтали */
+    gap: 20px; /* Расстояние между элементами */
+}
+
+.form-input {
+    width: 345px; /* Ширина полей ввода */
+    padding: 16px; /* Внутренние отступы */
+    border-radius: 8px;
+    border: 1px solid transparent; /* Граница по умолчанию */
+    background: #211A16; /* Цвет фона для полей ввода */
+    color: white; /* Цвет текста */
+    outline: none; /* Убираем контур при фокусе */
+}
+
+.form-input:focus {
+    border: 1px solid #DA8023; /* Граница при фокусе */
+}
+
+.button {
+    width: 370px; /* Ширина кнопки */
+    height: 62px; /* Высота кнопки */
+    border-radius: 8px;
+    background: linear-gradient(96deg, #DA8023 0%, #E2B438 100%);
+    padding: 16px; /* Внутренние отступы */
+    box-sizing: border-box; /* Учитывание границ внутри размера */
+    border: 0;
+    cursor: pointer;
+    outline: none;
+    color: #191411;
+    font-size: 20px;
+}
